@@ -1,5 +1,3 @@
-// ratingModules.js
-
 // 별 생성 함수
 export function createStars($container, maxRating) {
   const stars = [];
@@ -7,7 +5,7 @@ export function createStars($container, maxRating) {
 
   for (let i = 0; i < maxRating; i++) {
     const star = document.createElement('i');
-    star.classList.add('bx', 'bxs-star'); // Boxicons 아이콘 클래스
+    star.classList.add('bx', 'bxs-star'); 
     $container.appendChild(star);
     stars.push(star);
   }
